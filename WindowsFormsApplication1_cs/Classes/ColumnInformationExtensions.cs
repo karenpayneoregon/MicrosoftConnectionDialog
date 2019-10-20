@@ -1,18 +1,20 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-
-public static class ColumnInformationExtensions
+namespace WindowsFormsApplication1_cs.Classes
 {
-    public static string SelectStatement(this List<ColumnInformation> sender, string TableName)
+    public static class ColumnInformationExtensions
     {
-        if (sender.Count == 0)
+        public static string SelectStatement(this List<ColumnInformation> sender, string tableName)
         {
-            return $"SELECT * FROM {TableName}";
-        }
-        else
-        {
-            return "SELECT " + string.Join(",", sender.Select(col => $"[{col.Name}]").ToArray()) + $" FROM {TableName}";
+            if (sender.Count == 0)
+            {
+                return $"SELECT * FROM {tableName}";
+            }
+            else
+            {
+                return "SELECT " + string.Join(",", sender.Select(col => $"[{col.Name}]").ToArray()) + $" FROM {tableName}";
+            }
         }
     }
 }

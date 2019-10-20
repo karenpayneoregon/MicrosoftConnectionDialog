@@ -1,12 +1,15 @@
 ﻿
-public class ColumnInformation
+namespace WindowsFormsApplication1_cs.Classes
 {
-    public int Position { get; set; }
-    public string Name { get; set; }
-    public string DataType { get; set; }
-    public override string ToString()
+    public class ColumnInformation
     {
-        return Name;
+        public int Position { get; set; }
+        public string Name { get; set; }
+        public string DataType { get; set; }
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }
 

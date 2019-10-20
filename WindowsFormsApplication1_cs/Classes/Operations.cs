@@ -5,6 +5,7 @@ using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Windows.Forms;
+using WindowsFormsApplication1_cs.Classes;
 
 
 public class Operations
@@ -30,9 +31,9 @@ public class Operations
     {
         var success = false;
 
-        DataConnectionDialog dcd = new DataConnectionDialog();
+        var dcd = new DataConnectionDialog();
 
-        DataConnectionConfiguration dcs = new DataConnectionConfiguration(null);
+        var dcs = new DataConnectionConfiguration(null);
 
         dcs.LoadConfiguration(dcd);
 

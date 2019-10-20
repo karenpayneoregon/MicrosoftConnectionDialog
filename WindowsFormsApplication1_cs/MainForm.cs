@@ -1,12 +1,7 @@
-﻿using Microsoft.Data.ConnectionUI;
-using System.Data.SqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.Common;
-using System.Linq;
 using System.Windows.Forms;
-using static System.Windows.Forms.CheckedListBox;
+using WindowsFormsApplication1_cs.Classes;
 
 namespace WindowsFormsApplication1_cs
 {
@@ -30,28 +25,31 @@ namespace WindowsFormsApplication1_cs
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button1_Click(object sender, EventArgs e)
+        private void CreateNewConnectionButton_Click(object sender, EventArgs e)
         {
-            button2.Enabled = false;
-            button3.Enabled = false;
+            SelectColumnButton.Enabled = false;
+            GenerateSelectStatementButton.Enabled = false;
 
 
             var ops = new Operations();
             var dataSource = "";
-            if (ops.GetConnection(ref dataSource ))
-            {
-                listBox1.DataSource = ops.TableNames;
-                ServerName = ops.ServerName;
-                InitialCatalog = ops.InitialCatalog;
-                button2.Enabled = true;
-            }
+
+            if (!ops.GetConnection(ref dataSource)) return;
+
+            listBox1.DataSource = ops.TableNames;
+
+            ServerName = ops.ServerName;
+            InitialCatalog = ops.InitialCatalog;
+
+            SelectColumnButton.Enabled = true;
+
         }
         /// <summary>
         /// Show column names for selected table
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button2_Click(object sender, EventArgs e)
+        private void SelectColumnButton_Click(object sender, EventArgs e)
         {
             SetTableColumns();
         }
@@ -63,23 +61,26 @@ namespace WindowsFormsApplication1_cs
         {
             checkedListBox1.Items.Clear();
             var ops = new Operations();
+
             var columnInformation = ops.ColumnNameSelection(ServerName, InitialCatalog, listBox1.Text);
+
             foreach (var item in columnInformation)
             {
                 checkedListBox1.Items.Add(item);
             }
 
-            button3.Enabled = true;
-            button4.Enabled = true;
+            GenerateSelectStatementButton.Enabled = true;
+            ExportToDelimitedFileButton.Enabled = true;
         }
         /// <summary>
         /// Create a SELECT statement.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button3_Click(object sender, EventArgs e)
+        private void GenerateSelectStatementButton_Click(object sender, EventArgs e)
         {
             var columnInformation = new List<ColumnInformation>();
+
             for (int index = 0; index < checkedListBox1.Items.Count; index++)
             {
                 if (checkedListBox1.GetItemChecked(index))
@@ -88,8 +89,8 @@ namespace WindowsFormsApplication1_cs
                 }
             }
 
-            var f = new SelectStatementForm();
-            f.Statement = columnInformation.SelectStatement(listBox1.Text);
+            var f = new SelectStatementForm {Statement = columnInformation.SelectStatement(listBox1.Text)};
+
             try
             {
                 f.ShowDialog();
@@ -105,14 +106,17 @@ namespace WindowsFormsApplication1_cs
             Close();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void ExportToDelimitedFileButton_Click(object sender, EventArgs e)
         {
 
             var columnInformation = GetColumnInformation();
+
             saveFileDialog1.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory;
+
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 var ops = new Exporter();
+
                 ops.ToCsv(ServerName, InitialCatalog, columnInformation.SelectStatement(listBox1.Text), saveFileDialog1.FileName);
             }
         }
@@ -128,6 +132,7 @@ namespace WindowsFormsApplication1_cs
                     columnInformation.Add(((ColumnInformation)checkedListBox1.Items[index]));
                 }
             }
+
             return columnInformation;
         }
 

@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Classes\CheckListBoxItem.cs" />
     <Compile Include="Classes\ColumnInformation.cs" />
     <Compile Include="Classes\Exporter.cs" />
     <Compile Include="Classes\ColumnInformationExtensions.cs" />

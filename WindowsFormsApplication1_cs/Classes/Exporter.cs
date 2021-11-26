@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 
-namespace WindowsFormsApplication1_cs
+namespace WindowsFormsApplication1_cs.Classes
 {
     public class Exporter
     {
@@ -26,7 +26,11 @@ namespace WindowsFormsApplication1_cs
                 }
             };
 
-            Console.WriteLine($"SQLCMD.EXE {Process.StartInfo.Arguments}");
+            if (Debugger.IsAttached)
+            {
+                Console.WriteLine($"SQLCMD.EXE {Process.StartInfo.Arguments}");
+            }
+            
 
             Process.Start();
             Process.WaitForExit();

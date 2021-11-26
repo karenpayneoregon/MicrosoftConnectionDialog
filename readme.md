@@ -2,17 +2,17 @@
 
 In Visual Studio when a developer wants to create strong typed classes for database tables either for the conventional TableAdapter or Entity Framework there is a place in the process where a dialog is displayed as shown below. I will show you how to do this at runtime and a bit more.
 
-![Figure 1](assets/Figure1.jpg)
+![Figure 1](assets/Figure1.png)
 
 This code sample will show you the basics of using this dialog by working with the source code. In the next screenshot I have modified the source code so that any time SQL-Server data provider is used and it's my login I get a context menu item that allows me to auto fill the Server Name.
 
-![Figure 2](assets/Figure2.jpg)
+
 
 That is cool but we will now take advantage of this dialog so that (in this code sample) can create a SQL SELECT statement or create a CSV file for a table.
 
 To demonstrate this I created a simple windows forms project with the following interface to select a server, select a table, select columns. After making these selections pressing "Generate SQL SELECT" you get the following in the second image below.
 
-![Figure 3](assets/Figure3.jpg)
+![Figure 3](assets/main.png)
 
 Pressing "Export CSV" takes the SQL SELECT statement and passes it off to a process which uses SQLCMD.EXE. My Exporter class takes information obtained from the Connection Dialog and selections done in the form to create a CSV file.
 

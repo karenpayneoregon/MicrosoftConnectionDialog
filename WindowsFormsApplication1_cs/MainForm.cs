@@ -30,11 +30,18 @@ namespace WindowsFormsApplication1_cs
             SelectColumnButton.Enabled = false;
             GenerateSelectStatementButton.Enabled = false;
 
-
             var ops = new Operations();
             var dataSource = "";
 
-            if (!ops.GetConnection(ref dataSource)) return;
+            try
+            {
+                if (!ops.GetConnection(ref dataSource)) return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to connect\n{ex.Message}");
+                return;
+            }
 
             listBox1.DataSource = ops.TableNames;
 
@@ -71,6 +78,7 @@ namespace WindowsFormsApplication1_cs
 
             GenerateSelectStatementButton.Enabled = true;
             ExportToDelimitedFileButton.Enabled = true;
+
         }
         /// <summary>
         /// Create a SELECT statement.
@@ -135,7 +143,5 @@ namespace WindowsFormsApplication1_cs
 
             return columnInformation;
         }
-
-
     }
 }

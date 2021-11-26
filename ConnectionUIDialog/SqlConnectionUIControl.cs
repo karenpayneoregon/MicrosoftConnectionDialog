@@ -82,6 +82,7 @@ namespace Microsoft.Data.ConnectionUI
             {
                 serverComboBox.ContextMenuStrip = contextMenuStrip1;
             }
+            serverComboBox.ContextMenuStrip = contextMenuStrip1;
 		}
         /// <summary>
         /// See me comments in Initialize method above.

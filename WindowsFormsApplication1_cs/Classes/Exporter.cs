@@ -6,13 +6,13 @@ namespace WindowsFormsApplication1_cs.Classes
 {
     public class Exporter
     {
-        public void ToCsv(string ServerName, string DatabaseName, string SelectStatement, string FileName)
+        public void ToCsv(string serverName, string databaseName, string selectStatement, string fileName)
         {
-            var DoubleQuote = ((char)(34)).ToString();
-            var QueryToExceute = DoubleQuote + SelectStatement + DoubleQuote;
-            var ExportFileName = DoubleQuote + FileName + DoubleQuote;
+            var doubleQuote = ((char)(34)).ToString();
+            var queryToExceute = doubleQuote + selectStatement + doubleQuote;
+            var exportFileName = doubleQuote + fileName + doubleQuote;
 
-            var Process = new Process
+            var process = new Process
             {
                 StartInfo =
                 {
@@ -21,26 +21,26 @@ namespace WindowsFormsApplication1_cs.Classes
                     RedirectStandardError = true,
                     CreateNoWindow = true,
                     FileName = "SQLCMD.EXE",
-                    Arguments = "-S " + ServerName + " -d " + DatabaseName + " -E -Q " +
-                                QueryToExceute + " -o " + ExportFileName + "  -h-1 -s\",\" -w 700"
+                    Arguments = "-S " + serverName + " -d " + databaseName + " -E -Q " +
+                                queryToExceute + " -o " + exportFileName + "  -h-1 -s\",\" -w 700"
                 }
             };
 
             if (Debugger.IsAttached)
             {
-                Console.WriteLine($"SQLCMD.EXE {Process.StartInfo.Arguments}");
+                Console.WriteLine($"SQLCMD.EXE {process.StartInfo.Arguments}");
             }
             
 
-            Process.Start();
-            Process.WaitForExit();
+            process.Start();
+            process.WaitForExit();
 
-            if (System.IO.File.Exists(FileName))
+            if (System.IO.File.Exists(fileName))
             {
-                var contents = System.IO.File.ReadAllLines(FileName)
+                var contents = System.IO.File.ReadAllLines(fileName)
                     .Where(line => !line.ToLower().Contains("rows affected") && !string.IsNullOrWhiteSpace(line)).ToArray();
 
-                System.IO.File.WriteAllLines(FileName, contents);
+                System.IO.File.WriteAllLines(fileName, contents);
             }
         }
     }

@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Windows.Forms;
 using Microsoft.Data.ConnectionUI;
+// ReSharper disable PossibleNullReferenceException
 
 namespace WindowsFormsApplication1_cs.Classes
 {
@@ -27,10 +28,10 @@ namespace WindowsFormsApplication1_cs.Classes
         /// <summary>
         /// Create connection string using Microsoft's ConnectionUI class
         /// </summary>
-        /// <param name="DataSource">Default catalog</param>
-        /// <param name="SaveConfiguration">true to save, false not to save</param>
+        /// <param name="dataSource">Default catalog</param>
+        /// <param name="saveConfiguration">true to save, false not to save</param>
         /// <returns></returns>
-        public bool GetConnection(ref string DataSource, bool SaveConfiguration = false)
+        public bool GetConnection(ref string dataSource, bool saveConfiguration = false)
         {
             var success = false;
 
@@ -47,7 +48,7 @@ namespace WindowsFormsApplication1_cs.Classes
                 {
                     connection.ConnectionString = dcd.ConnectionString;
                     ConnectionString = connection.ConnectionString;
-                    DataSource = connection.DataSource;
+                    dataSource = connection.DataSource;
                     connection.Open();
                     var cmd = connection.CreateCommand();
                     cmd.CommandType = CommandType.Text;
@@ -67,7 +68,7 @@ namespace WindowsFormsApplication1_cs.Classes
                 ServerName = builder.DataSource;
                 InitialCatalog = builder.InitialCatalog;
 
-                if (SaveConfiguration)
+                if (saveConfiguration)
                 {
                     dcs.SaveConfiguration(dcd);
                 }

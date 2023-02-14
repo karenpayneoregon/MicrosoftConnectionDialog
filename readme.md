@@ -79,3 +79,4 @@ The two things the connection dialog is good for is when writing code in develop
 ## Copyrights
 As I did not create the classes for the Connection Dialog they are copyrighted to Microsoft as each class has a copyright notice within.
 
+Original source code was Framework 3.5, Karen updated to Framework 4.8 02/2023.

@@ -1,5 +1,8 @@
 # Using Microsoft Visual Studio Connection Dialog at runtime
 
+> **Note**
+> Original code from Microsoft was in .NET Framework 3.5, Karen updated to .NET Framework 4.8. If using .NET Core it would be a time consuming effort to move to .NET Core, mainly the user interfaces.
+
 In Visual Studio when a developer wants to create strong typed classes for database tables either for the conventional TableAdapter or Entity Framework there is a place in the process where a dialog is displayed as shown below. I will show you how to do this at runtime and a bit more.
 
 ![Figure 1](assets/Figure1.png)

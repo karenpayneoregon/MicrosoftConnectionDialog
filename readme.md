@@ -1,6 +1,6 @@
 # Using Microsoft Visual Studio Connection Dialog at runtime
 
-## Enhancements
+## Enhancements 02/2023
 
 Added pre-defined menu items for SQL-Server
 

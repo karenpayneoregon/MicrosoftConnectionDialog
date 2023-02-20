@@ -75,7 +75,11 @@ namespace Microsoft.Data.ConnectionUI
              */
 
             serverComboBox.ContextMenuStrip = contextMenuStrip1;
-		}
+            serverComboBox.SelectedIndex = 0;
+            ActiveControl = selectDatabaseComboBox;
+
+
+        }
         /// <summary>
         /// See me comments in Initialize method above.
         /// </summary>

@@ -112,16 +112,16 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="mainTableLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="mainTableLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -131,7 +131,7 @@
   <data name="dataSourceLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dataSourceLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -139,7 +139,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="dataSourceLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 13</value>
+    <value>83, 16</value>
   </data>
   <data name="dataSourceLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -151,7 +151,7 @@
     <value>dataSourceLabel</value>
   </data>
   <data name="&gt;&gt;dataSourceLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dataSourceLabel.Parent" xml:space="preserve">
     <value>leftPanel</value>
@@ -162,14 +162,20 @@
   <data name="dataSourceListBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="dataSourceListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
   <data name="dataSourceListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 16</value>
+    <value>0, 20</value>
   </data>
   <data name="dataSourceListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 3, 0, 3</value>
+    <value>0, 4, 0, 4</value>
+  </data>
+  <data name="dataSourceListBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>265, 132</value>
   </data>
   <data name="dataSourceListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 108</value>
+    <value>265, 132</value>
   </data>
   <data name="dataSourceListBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -178,7 +184,7 @@
     <value>dataSourceListBox</value>
   </data>
   <data name="&gt;&gt;dataSourceListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dataSourceListBox.Parent" xml:space="preserve">
     <value>leftPanel</value>
@@ -193,13 +199,13 @@
     <value>True</value>
   </data>
   <data name="dataProviderLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 130</value>
+    <value>0, 160</value>
   </data>
   <data name="dataProviderLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 3, 0, 0</value>
+    <value>0, 4, 0, 0</value>
   </data>
   <data name="dataProviderLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
+    <value>92, 16</value>
   </data>
   <data name="dataProviderLabel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -211,7 +217,7 @@
     <value>dataProviderLabel</value>
   </data>
   <data name="&gt;&gt;dataProviderLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dataProviderLabel.Parent" xml:space="preserve">
     <value>leftPanel</value>
@@ -229,13 +235,13 @@
     <value />
   </data>
   <data name="dataProviderComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 146</value>
+    <value>0, 180</value>
   </data>
   <data name="dataProviderComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 3, 0, 0</value>
+    <value>0, 4, 0, 0</value>
   </data>
   <data name="dataProviderComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 21</value>
+    <value>264, 24</value>
   </data>
   <data name="dataProviderComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -244,7 +250,7 @@
     <value>dataProviderComboBox</value>
   </data>
   <data name="&gt;&gt;dataProviderComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dataProviderComboBox.Parent" xml:space="preserve">
     <value>leftPanel</value>
@@ -259,10 +265,10 @@
     <value>0, 0</value>
   </data>
   <data name="leftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 3, 0</value>
+    <value>0, 0, 4, 0</value>
   </data>
   <data name="leftPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 167</value>
+    <value>266, 206</value>
   </data>
   <data name="leftPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -271,7 +277,7 @@
     <value>leftPanel</value>
   </data>
   <data name="&gt;&gt;leftPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;leftPanel.Parent" xml:space="preserve">
     <value>mainTableLayoutPanel</value>
@@ -286,13 +292,13 @@
     <value>Top, Bottom, Left, Right</value>
   </data>
   <data name="descriptionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 19</value>
+    <value>12, 23</value>
   </data>
   <data name="descriptionLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+    <value>8, 7, 8, 7</value>
   </data>
   <data name="descriptionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 129</value>
+    <value>243, 160</value>
   </data>
   <data name="descriptionLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -301,7 +307,7 @@
     <value>descriptionLabel</value>
   </data>
   <data name="&gt;&gt;descriptionLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;descriptionLabel.Parent" xml:space="preserve">
     <value>descriptionGroupBox</value>
@@ -310,13 +316,16 @@
     <value>0</value>
   </data>
   <data name="descriptionGroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 10</value>
+    <value>274, 12</value>
   </data>
   <data name="descriptionGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 10, 0, 0</value>
+    <value>4, 12, 0, 0</value>
+  </data>
+  <data name="descriptionGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="descriptionGroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 157</value>
+    <value>267, 194</value>
   </data>
   <data name="descriptionGroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -328,7 +337,7 @@
     <value>descriptionGroupBox</value>
   </data>
   <data name="&gt;&gt;descriptionGroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;descriptionGroupBox.Parent" xml:space="preserve">
     <value>mainTableLayoutPanel</value>
@@ -337,13 +346,16 @@
     <value>1</value>
   </data>
   <data name="mainTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>16, 15</value>
+  </data>
+  <data name="mainTableLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="mainTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="mainTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>406, 167</value>
+    <value>541, 206</value>
   </data>
   <data name="mainTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -352,7 +364,7 @@
     <value>mainTableLayoutPanel</value>
   </data>
   <data name="&gt;&gt;mainTableLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;mainTableLayoutPanel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -373,10 +385,13 @@
     <value>System</value>
   </data>
   <data name="saveSelectionCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 188</value>
+    <value>16, 232</value>
+  </data>
+  <data name="saveSelectionCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="saveSelectionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 18</value>
+    <value>186, 21</value>
   </data>
   <data name="saveSelectionCheckBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -388,7 +403,7 @@
     <value>saveSelectionCheckBox</value>
   </data>
   <data name="&gt;&gt;saveSelectionCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;saveSelectionCheckBox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -418,10 +433,13 @@
     <value>0, 0</value>
   </data>
   <data name="okButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 3, 0</value>
+    <value>0, 0, 4, 0</value>
+  </data>
+  <data name="okButton.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 28</value>
   </data>
   <data name="okButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>100, 31</value>
   </data>
   <data name="okButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -433,7 +451,7 @@
     <value>okButton</value>
   </data>
   <data name="&gt;&gt;okButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;okButton.Parent" xml:space="preserve">
     <value>buttonsTableLayoutPanel</value>
@@ -451,13 +469,16 @@
     <value>System</value>
   </data>
   <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 0</value>
+    <value>108, 0</value>
   </data>
   <data name="cancelButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 0, 0, 0</value>
+    <value>4, 0, 0, 0</value>
+  </data>
+  <data name="cancelButton.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 28</value>
   </data>
   <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>100, 31</value>
   </data>
   <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -469,7 +490,7 @@
     <value>cancelButton</value>
   </data>
   <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
     <value>buttonsTableLayoutPanel</value>
@@ -478,16 +499,16 @@
     <value>1</value>
   </data>
   <data name="buttonsTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 188</value>
+    <value>349, 228</value>
   </data>
   <data name="buttonsTableLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 6, 3, 3</value>
+    <value>4, 7, 4, 4</value>
   </data>
   <data name="buttonsTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="buttonsTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 23</value>
+    <value>208, 31</value>
   </data>
   <data name="buttonsTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -496,7 +517,7 @@
     <value>buttonsTableLayoutPanel</value>
   </data>
   <data name="&gt;&gt;buttonsTableLayoutPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonsTableLayoutPanel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -507,20 +528,23 @@
   <data name="buttonsTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="okButton" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="cancelButton" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>430, 223</value>
+    <value>573, 274</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>438, 247</value>
+    <value>578, 293</value>
   </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 9, 9, 9</value>
+    <value>12, 11, 12, 11</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
@@ -532,6 +556,6 @@
     <value>DataConnectionSourceDialog</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

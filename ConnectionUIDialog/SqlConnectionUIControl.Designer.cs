@@ -81,6 +81,9 @@
             this.serverComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.serverComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.serverComboBox.FormattingEnabled = true;
+            this.serverComboBox.Items.AddRange(new object[] {
+            resources.GetString("serverComboBox.Items"),
+            resources.GetString("serverComboBox.Items1")});
             this.serverComboBox.Name = "serverComboBox";
             this.serverComboBox.DropDown += new System.EventHandler(this.EnumerateServers);
             this.serverComboBox.TextChanged += new System.EventHandler(this.SetServer);

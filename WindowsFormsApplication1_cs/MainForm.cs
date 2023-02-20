@@ -143,5 +143,10 @@ namespace WindowsFormsApplication1_cs
 
             return columnInformation;
         }
+
+        private void GenerateConnectionStringButton_Click(object sender, EventArgs e)
+        {
+            Operations.CreateConnectionString();
+        }
     }
 }

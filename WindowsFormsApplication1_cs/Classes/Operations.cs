@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -24,6 +25,21 @@ namespace WindowsFormsApplication1_cs.Classes
         /// Table names in ServerName.InitialCatalog 
         /// </summary>
         public List<string> TableNames { get; set; }
+
+        public static void CreateConnectionString()
+        {
+            var dcd = new DataConnectionDialog();
+
+            var dcs = new DataConnectionConfiguration(null);
+
+            dcs.LoadConfiguration(dcd);
+
+            if (DataConnectionDialog.Show(dcd) == DialogResult.OK)
+            {
+                var connectionString = dcd.ConnectionString;
+                Console.WriteLine(connectionString);
+            }
+        }
 
         /// <summary>
         /// Create connection string using Microsoft's ConnectionUI class

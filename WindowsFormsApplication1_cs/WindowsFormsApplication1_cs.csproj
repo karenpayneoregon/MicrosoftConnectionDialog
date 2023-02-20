@@ -53,6 +53,12 @@
     <Compile Include="Classes\ColumnInformation.cs" />
     <Compile Include="Classes\Exporter.cs" />
     <Compile Include="Classes\ColumnInformationExtensions.cs" />
+    <Compile Include="CreateConnectionStringForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateConnectionStringForm.Designer.cs">
+      <DependentUpon>CreateConnectionStringForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="SelectStatementForm.Designer.cs">
       <DependentUpon>SelectStatementForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CreateConnectionStringForm.resx">
+      <DependentUpon>CreateConnectionStringForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

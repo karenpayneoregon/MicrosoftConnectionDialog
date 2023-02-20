@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="UseThisConnectionString" xml:space="preserve">
+  <data name="BlankConntection" xml:space="preserve">
     <value>{
   "Logging": {
     "LogLevel": {
@@ -127,7 +127,7 @@
   },
   "AllowedHosts": "*",
   "ConnectionStrings": {
-    "DefaultConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=EF.EncryptPropertyValues;Integrated Security=True"
+    "DefaultConnection": "_TOKEN_"
   }
 }</value>
   </data>

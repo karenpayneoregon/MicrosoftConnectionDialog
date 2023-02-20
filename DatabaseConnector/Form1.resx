@@ -117,18 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="UseThisConnectionString" xml:space="preserve">
-    <value>{
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning"
-    }
-  },
-  "AllowedHosts": "*",
-  "ConnectionStrings": {
-    "DefaultConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=EF.EncryptPropertyValues;Integrated Security=True"
-  }
-}</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAGBUAAAEAIABcCAAAFgAAACgAAAAYAAAAKgAAAAEAIAAAAAAANAgAANJJAADSSQAAAAAAAAAA
+        AAD///8A////AP///wD///8ArJ+SJ8G1rUHe1dNc8PDwafPz83H09PRf9/f3Ru7u7kzv6uow////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AoqKLCq2gk3OsnpKTrqGUYbar
+        oC3j39xv7u7uS+jo6Czo6Og46+vrMu7u7h7u7u577+/vD////wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wCpnI8mqJyQv6uek5unmY9IxbuyNOfj40Hu7u497+/vku3t7Rzu7u4e7u7uS+/s
+        7FHw7u587erqZP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wCom5DXq5qSPP//
+        /wC4rqdLx7yxFt3MzA7v7+9h8fDwzPT09Nvw8PCH7OzsNf///wD///8A7u7umOnp6Qv///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wCpnJDHqJiOMbmspDrZ0s5D6OTkfe7u7lzs7Ox75OTkEu/v
+        71Dx7++T6+vrQe7u7kzu7u4e7u7ufO7u7kz///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wCpnI84raCWTdrRrRvp5NQv8vLykv/////z8/Nw8/PzQe/v7x/t6+uC0NDQCuzs7A3v7+8/7+3tg+7s
+        7H3///8A////AP///wD///8A////AP///wD///8A////AP///wD///8As6itK1VPtC8AAG0G/v71gf7+
+        9Wbv7u6o8/PzQvHx8WDz8fGW8/Lyt+3r61nr6+sZ7OzsGu3t7Y7///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////ACETphYXEqRifXrI3AAAlhX+/vdh/v7+N////wDu7uxt8vLyqO7r
+        61ru7u497OzsG+3r65B8fHwB////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8ADgikah8Zr9AnIqmSmpfSq8LA4IX///8O/v76Pv//9yH///IT7uvrXO3t7al8fHwB////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////ACEcpTsdGKeTHRmogDgz
+        snAGAaFhbWrHlrWz3HzW0uI+////H/7+8pL///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wAiHKlQIBuplBoUplUgGqdcHBaphjUytaEhG6tqNi+5dJKP
+        0a0gILUlAAD/Af///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8AIh2pXiIcqbIiHavcISG8LR0dvUUiIrpJExOxFgAAqC4iHq+DIx2tsiIern0jG69PIx+vPyAZ
+        riUaGqkRAACpAv///wD///8A////AP///wD///8A////AP///wD///8AHx2pVSEdqK0jHrE3JSXBnSov
+        4FomJ8itIyO4TyEZoUMhHad6Hx+nKCEdqX8jHapdIh+yOCIfskgiHbJCIh+uOCEbqFL///8A////AP//
+        /wD///8A////AP///wD///8AIRuoKyEbplshHqhDJibBdzA38SQoK9SoJiK+9yIcqdghHqlBGBixCR4e
+        tQYiHad3HR2mGf///wAmD5wMIh2obyIZpTj///8A////AP///wD///8A////AP///wD///8AIhqnSCQd
+        r0whHaloJSO+3Skt2dsoLdZvIyOtGyEcqYYiG6hJIx6pXB8cqEYiGaU4IhyrhSEcqGkhHKmPHhqoN///
+        /wD///8A////AP///wD///8A////AP///wD///8AIRyosyMdsbofHKhGIx+3RiMjumMjI7pGIx2rKiIb
+        qEklHqwhIiK2FCIfrlgjHq+VIx2tpSMdqF0oKKoF////AP///wD///8A////AP///wD///8A////AFFR
+        qQIcGqVgGBKmZwUAmygLBqU+GRKnWQcAnzciHatCIh6uhCIerackHrCLIh6vdSQesVslH64o////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8AAACiFRgSp30mIa2CQT20e01JuHJEPrWNOjW0hX57
+        xaIiH6xJJB+vLyEhrRU9AL4D////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wA/P5QLd3GqrlpUt1yzsdJyvbfVXNTQ30fz7+Rx9/Tijv7+9h7///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wB8fHwB29KyOO7q13vs6uGK8u/lT/Dw
+        6zTp6eU74d7cZf///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wDd3d0W4NraKd3Y2C3e29tG3d3dDv///wD///8A////AP//
+        /wD///8A////AP///wD///8A////AP///wD///8A////AP///wDwB/8AgAP/AAAD/wAgGf8AAAH/AAAB
+        /wCAAf8AwID/APAA/wD4Af8A/AB/AP4AAQD+AAAA/gAIAP4AAQD+AAMA+AAfAPAA/wDgD/8A4B//APwf
+        /wA=
+</value>
   </data>
 </root>

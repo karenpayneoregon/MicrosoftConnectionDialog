@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsApplication1_cs.Properties {
+namespace DatabaseConnector.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace WindowsFormsApplication1_cs.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WindowsFormsApplication1_cs.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DatabaseConnector.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -70,13 +70,13 @@ namespace WindowsFormsApplication1_cs.Properties {
         ///  },
         ///  &quot;AllowedHosts&quot;: &quot;*&quot;,
         ///  &quot;ConnectionStrings&quot;: {
-        ///    &quot;DefaultConnection&quot;: &quot;Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=EF.EncryptPropertyValues;Integrated Security=True&quot;
+        ///    &quot;DefaultConnection&quot;: &quot;_TOKEN_&quot;
         ///  }
         ///}.
         /// </summary>
-        internal static string UseThisConnectionString {
+        internal static string BlankConntection {
             get {
-                return ResourceManager.GetString("UseThisConnectionString", resourceCulture);
+                return ResourceManager.GetString("BlankConntection", resourceCulture);
             }
         }
     }

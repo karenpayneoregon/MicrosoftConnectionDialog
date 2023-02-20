@@ -1,5 +1,11 @@
 # Using Microsoft Visual Studio Connection Dialog at runtime
 
+## Enhancements
+
+Added pre-defined menu items for SQL-Server
+
+
+
 > **Note**
 > Original code from Microsoft was in .NET Framework 3.5, Karen updated to .NET Framework 4.8. If using .NET Core it would be a time consuming effort to move to .NET Core, mainly the user interfaces.
 
@@ -57,6 +63,7 @@ namespace WindowsFormsApplication1_cs
     } 
 } 
 ```
+
 The command for SQLCMD in this case is
 SQLCMD.EXE -S KARENS-PC -d NorthWindAzure -E -Q "SELECT [ProductID],[ProductName],[UnitsInStock] FROM Products" -o "C:\Data\test.csv"  -h-1 -s"," -w 700
 Partial contents of the file generate
@@ -83,3 +90,9 @@ The two things the connection dialog is good for is when writing code in develop
 As I did not create the classes for the Connection Dialog they are copyrighted to Microsoft as each class has a copyright notice within.
 
 Original source code was Framework 3.5, Karen updated to Framework 4.8 02/2023.
+
+## 02/2023
+
+Added use encryption option
+
+![Title](assets/title.png)

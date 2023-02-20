@@ -4,6 +4,13 @@
 
 Added pre-defined menu items for SQL-Server
 
+![Options](assets/options.png)
+
+Use encryption
+
+![Use Encyption](assets/useEncyption.png)
+
+
 
 
 > **Note**

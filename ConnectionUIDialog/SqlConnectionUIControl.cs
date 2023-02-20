@@ -70,18 +70,10 @@ namespace Microsoft.Data.ConnectionUI
 			_controlProperties = new ControlProperties(connectionProperties);
 
             /*
-             * Karen Payne comment: 
-             * I added the ContextMenu contextMenuStrip1 with one
-             * item that is my SQL-Server name. If I'm login then
-             * Karens is the user name which then attaches the context
-             * menu to the ComoboBox for server that when right clicked
-             * I can select my Server name. This is good for me testing 
-             * things out rather than having to type in my server name.
+             * Karen Payne comment:
+             * Added two context menu items for SQlExpress and LocalDb
              */
-            if (Environment.UserName == "Karens")
-            {
-                serverComboBox.ContextMenuStrip = contextMenuStrip1;
-            }
+
             serverComboBox.ContextMenuStrip = contextMenuStrip1;
 		}
         /// <summary>
@@ -92,6 +84,10 @@ namespace Microsoft.Data.ConnectionUI
         private void ServerNameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             serverComboBox.Text = ServerNameToolStripMenuItem.Text;
+        }
+        private void LocalDbServerNameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            serverComboBox.Text = LocalDbServerNameToolStripMenuItem.Text;
         }
 
         public void LoadProperties()

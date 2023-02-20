@@ -35,7 +35,7 @@ namespace WindowsFormsApplication1_cs
 
             try
             {
-                if (!ops.GetConnection(ref dataSource)) return;
+                if (!ops.GetConnection(ref dataSource, true)) return;
             }
             catch (Exception ex)
             {

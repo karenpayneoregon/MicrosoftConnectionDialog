@@ -53,6 +53,7 @@
             this.selectDatabaseRadioButton = new System.Windows.Forms.RadioButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ServerNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LocalDbServerNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serverTableLayoutPanel.SuspendLayout();
             this.logonGroupBox.SuspendLayout();
             this.loginTableLayoutPanel.SuspendLayout();
@@ -230,8 +231,10 @@
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ServerNameToolStripMenuItem});
+            this.ServerNameToolStripMenuItem,
+            this.LocalDbServerNameToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
@@ -241,6 +244,12 @@
             resources.ApplyResources(this.ServerNameToolStripMenuItem, "ServerNameToolStripMenuItem");
             this.ServerNameToolStripMenuItem.Click += new System.EventHandler(this.ServerNameToolStripMenuItem_Click);
             // 
+            // LocalDbServerNameToolStripMenuItem
+            // 
+            this.LocalDbServerNameToolStripMenuItem.Name = "LocalDbServerNameToolStripMenuItem";
+            resources.ApplyResources(this.LocalDbServerNameToolStripMenuItem, "LocalDbServerNameToolStripMenuItem");
+            this.LocalDbServerNameToolStripMenuItem.Click += new System.EventHandler(this.LocalDbServerNameToolStripMenuItem_Click);
+            // 
             // SqlConnectionUIControl
             // 
             resources.ApplyResources(this, "$this");
@@ -249,7 +258,6 @@
             this.Controls.Add(this.logonGroupBox);
             this.Controls.Add(this.serverTableLayoutPanel);
             this.Controls.Add(this.serverLabel);
-            this.MinimumSize = new System.Drawing.Size(350, 360);
             this.Name = "SqlConnectionUIControl";
             this.serverTableLayoutPanel.ResumeLayout(false);
             this.serverTableLayoutPanel.PerformLayout();
@@ -293,5 +301,6 @@
 		private System.Windows.Forms.TextBox logicalDatabaseNameTextBox;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ServerNameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LocalDbServerNameToolStripMenuItem;
     }
 }

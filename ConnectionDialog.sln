@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microsoft code", "Microsoft code", "{3DABD6A2-20B7-4E43-B682-EDBA979CC6D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +117,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{139729CD-0F06-48E8-9F4A-08E78BB6575F} = {3DABD6A2-20B7-4E43-B682-EDBA979CC6D7}
+		{05C97F8D-B7CF-4CAB-B81C-0994A70D90CA} = {3DABD6A2-20B7-4E43-B682-EDBA979CC6D7}
+		{444AC953-5861-49CA-B491-9EB8A1C6CE24} = {3DABD6A2-20B7-4E43-B682-EDBA979CC6D7}
+		{1CC9D080-C06D-4202-A14B-14A9CC7F7F31} = {3DABD6A2-20B7-4E43-B682-EDBA979CC6D7}
+		{CF22916C-6B3C-4D67-AD2E-94A730526539} = {3DABD6A2-20B7-4E43-B682-EDBA979CC6D7}
+		{3067ACBB-093B-4179-B531-11A1E7F69432} = {3DABD6A2-20B7-4E43-B682-EDBA979CC6D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {75982229-9178-4538-A48C-042289C7E2D7}

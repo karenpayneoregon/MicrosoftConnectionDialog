@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 using WindowsFormsApplication1_cs.Classes;
 
@@ -147,6 +148,22 @@ namespace WindowsFormsApplication1_cs
         private void GenerateConnectionStringButton_Click(object sender, EventArgs e)
         {
             Operations.CreateConnectionString();
+        }
+
+        private void DeleteDataConnectionFileButton_Click(object sender, EventArgs e)
+        {
+            var fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataConnection.xml");
+            if (File.Exists(fileName))
+            {
+                try
+                {
+                    File.Delete(fileName);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Failed to remove file");
+                }
+            }
         }
     }
 }

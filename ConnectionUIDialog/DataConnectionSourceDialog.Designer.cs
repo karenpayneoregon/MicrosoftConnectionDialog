@@ -40,6 +40,7 @@
             this.buttonsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.okButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
+            this.AboutButton = new System.Windows.Forms.Button();
             this.mainTableLayoutPanel.SuspendLayout();
             this.leftPanel.SuspendLayout();
             this.descriptionGroupBox.SuspendLayout();
@@ -137,12 +138,21 @@
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelButton.Name = "cancelButton";
             // 
+            // AboutButton
+            // 
+            this.AboutButton.Image = global::Microsoft.Data.ConnectionUI.Strings.blueInformation_16;
+            resources.ApplyResources(this.AboutButton, "AboutButton");
+            this.AboutButton.Name = "AboutButton";
+            this.AboutButton.UseVisualStyleBackColor = true;
+            this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
+            // 
             // DataConnectionSourceDialog
             // 
             this.AcceptButton = this.okButton;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
+            this.Controls.Add(this.AboutButton);
             this.Controls.Add(this.mainTableLayoutPanel);
             this.Controls.Add(this.saveSelectionCheckBox);
             this.Controls.Add(this.buttonsTableLayoutPanel);
@@ -177,5 +187,6 @@
 		private System.Windows.Forms.TableLayoutPanel buttonsTableLayoutPanel;
 		private System.Windows.Forms.Button okButton;
 		private System.Windows.Forms.Button cancelButton;
-	}
+        private System.Windows.Forms.Button AboutButton;
+    }
 }

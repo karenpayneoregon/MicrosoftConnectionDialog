@@ -106,6 +106,16 @@ namespace Microsoft.Data.ConnectionUI {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blueInformation_16 {
+            get {
+                object obj = ResourceManager.GetObject("blueInformation_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &amp;Add....
         /// </summary>
         internal static string DataConnectionAdvancedDialog_Add {

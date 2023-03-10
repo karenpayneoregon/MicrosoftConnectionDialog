@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.ConnectionUI;
 using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace DatabaseConnector
@@ -9,9 +10,30 @@ namespace DatabaseConnector
         public Form1()
         {
             InitializeComponent();
+
+            RemoveConfigurationFile();
         }
+
+        private static void RemoveConfigurationFile()
+        {
+            var fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataConnection.xml");
+            if (File.Exists(fileName))
+            {
+                try
+                {
+                    File.Delete(fileName);
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Failed to remove file");
+                }
+            }
+        }
+
         public static string CreateConnectionString()
         {
+            RemoveConfigurationFile();
+
             var dcd = new DataConnectionDialog();
 
             var dcs = new DataConnectionConfiguration(null);
@@ -36,12 +58,17 @@ namespace DatabaseConnector
 
         private void CreateButton_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
+            ResultTextBox.Text = "";
+            ConnectionStringTextBox.Text = "";
+
+            var connection = CreateConnectionString();
+
+            ConnectionStringTextBox.Text = connection;
             var connectionString = Properties.Resources.BlankConntection
-                .Replace("_TOKEN_", CreateConnectionString())
+                .Replace("_TOKEN_", connection)
                 .Replace("\\", "\\\\");
             
-            textBox1.Text = connectionString;
+            ResultTextBox.Text = connectionString;
         }
     }
 

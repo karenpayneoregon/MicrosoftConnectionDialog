@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1_cs
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CreateConnectionStringForm());
+            Application.Run(new MainForm());
         }
     }
 }

@@ -38,13 +38,14 @@
             this.ExportToDelimitedFileButton = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.GenerateConnectionStringButton = new System.Windows.Forms.Button();
+            this.DeleteDataConnectionFileButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // CreateNewConnectionButton
             // 
             this.CreateNewConnectionButton.Location = new System.Drawing.Point(16, 15);
-            this.CreateNewConnectionButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreateNewConnectionButton.Margin = new System.Windows.Forms.Padding(4);
             this.CreateNewConnectionButton.Name = "CreateNewConnectionButton";
             this.CreateNewConnectionButton.Size = new System.Drawing.Size(219, 28);
             this.CreateNewConnectionButton.TabIndex = 0;
@@ -57,7 +58,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(243, 15);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(225, 244);
             this.listBox1.TabIndex = 4;
@@ -67,7 +68,7 @@
             // 
             this.SelectColumnButton.Enabled = false;
             this.SelectColumnButton.Location = new System.Drawing.Point(16, 50);
-            this.SelectColumnButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SelectColumnButton.Margin = new System.Windows.Forms.Padding(4);
             this.SelectColumnButton.Name = "SelectColumnButton";
             this.SelectColumnButton.Size = new System.Drawing.Size(219, 28);
             this.SelectColumnButton.TabIndex = 1;
@@ -79,7 +80,7 @@
             // 
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Location = new System.Drawing.Point(477, 15);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(232, 242);
             this.checkedListBox1.TabIndex = 5;
@@ -88,7 +89,7 @@
             // 
             this.GenerateSelectStatementButton.Enabled = false;
             this.GenerateSelectStatementButton.Location = new System.Drawing.Point(16, 86);
-            this.GenerateSelectStatementButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GenerateSelectStatementButton.Margin = new System.Windows.Forms.Padding(4);
             this.GenerateSelectStatementButton.Name = "GenerateSelectStatementButton";
             this.GenerateSelectStatementButton.Size = new System.Drawing.Size(219, 28);
             this.GenerateSelectStatementButton.TabIndex = 2;
@@ -98,10 +99,11 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.DeleteDataConnectionFileButton);
             this.panel1.Controls.Add(this.closeButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 267);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(732, 55);
             this.panel1.TabIndex = 6;
@@ -110,7 +112,7 @@
             // 
             this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.closeButton.Location = new System.Drawing.Point(616, 12);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(4);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(100, 28);
             this.closeButton.TabIndex = 0;
@@ -122,7 +124,7 @@
             // 
             this.ExportToDelimitedFileButton.Enabled = false;
             this.ExportToDelimitedFileButton.Location = new System.Drawing.Point(16, 122);
-            this.ExportToDelimitedFileButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExportToDelimitedFileButton.Margin = new System.Windows.Forms.Padding(4);
             this.ExportToDelimitedFileButton.Name = "ExportToDelimitedFileButton";
             this.ExportToDelimitedFileButton.Size = new System.Drawing.Size(219, 28);
             this.ExportToDelimitedFileButton.TabIndex = 3;
@@ -145,6 +147,17 @@
             this.GenerateConnectionStringButton.UseVisualStyleBackColor = true;
             this.GenerateConnectionStringButton.Click += new System.EventHandler(this.GenerateConnectionStringButton_Click);
             // 
+            // DeleteDataConnectionFileButton
+            // 
+            this.DeleteDataConnectionFileButton.Location = new System.Drawing.Point(16, 12);
+            this.DeleteDataConnectionFileButton.Margin = new System.Windows.Forms.Padding(4);
+            this.DeleteDataConnectionFileButton.Name = "DeleteDataConnectionFileButton";
+            this.DeleteDataConnectionFileButton.Size = new System.Drawing.Size(219, 28);
+            this.DeleteDataConnectionFileButton.TabIndex = 8;
+            this.DeleteDataConnectionFileButton.Text = "Delete DataConnection.xml";
+            this.DeleteDataConnectionFileButton.UseVisualStyleBackColor = true;
+            this.DeleteDataConnectionFileButton.Click += new System.EventHandler(this.DeleteDataConnectionFileButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -159,7 +172,7 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.CreateNewConnectionButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Code sample";
@@ -180,6 +193,7 @@
         private System.Windows.Forms.Button ExportToDelimitedFileButton;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button GenerateConnectionStringButton;
+        private System.Windows.Forms.Button DeleteDataConnectionFileButton;
     }
 }
 

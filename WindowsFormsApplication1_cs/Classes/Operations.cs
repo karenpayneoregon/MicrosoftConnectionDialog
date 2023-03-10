@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using Microsoft.Data.ConnectionUI;
@@ -53,7 +54,7 @@ namespace WindowsFormsApplication1_cs.Classes
 
             var dcd = new DataConnectionDialog();
 
-            var dcs = new DataConnectionConfiguration(null);
+            var dcs = new DataConnectionConfiguration(AppDomain.CurrentDomain.BaseDirectory);
 
             dcs.LoadConfiguration(dcd);
 

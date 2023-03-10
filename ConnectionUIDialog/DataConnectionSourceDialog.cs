@@ -9,6 +9,9 @@ using System.Drawing;
 using System.Diagnostics;
 using System.Windows.Forms;
 using System.Collections.Generic;
+// ReSharper disable FieldCanBeMadeReadOnly.Local
+// ReSharper disable PossibleNullReferenceException
+// ReSharper disable AssignNullToNotNullAttribute
 
 namespace Microsoft.Data.ConnectionUI
 {
@@ -435,5 +438,10 @@ namespace Microsoft.Data.ConnectionUI
 		private Label _headerLabel;
 		private Dictionary<DataSource, DataProvider> _providerSelections = new Dictionary<DataSource, DataProvider>();
 		private DataConnectionDialog _mainDialog;
-	}
+
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Modified version by Karen Payne");
+        }
+    }
 }

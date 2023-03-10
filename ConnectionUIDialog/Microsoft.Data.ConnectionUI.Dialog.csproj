@@ -136,6 +136,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataConnectionSourceDialog.resx">
       <DependentUpon>DataConnectionSourceDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="OdbcConnectionUIControl.resx">
       <DependentUpon>OdbcConnectionUIControl.cs</DependentUpon>
@@ -185,6 +186,9 @@
       <Name>Microsoft.Data.ConnectionUI</Name>
       <Comment>Needs 'microsoft.data.connectionui.dll'</Comment>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueInformation_16.png" />
   </ItemGroup>
   <!--Import the targets-->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

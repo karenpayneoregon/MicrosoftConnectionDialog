@@ -36,17 +36,17 @@ namespace DatabaseConnector
         {
             RemoveConfigurationFile();
 
-            var dcd = new DataConnectionDialog();
+            var dialog = new DataConnectionDialog();
 
-            var dcs = new DataConnectionConfiguration(null);
+            var configuration = new DataConnectionConfiguration(null);
 
-            dcs.LoadConfiguration(dcd);
+            configuration.LoadConfiguration(dialog);
 
-            if (DataConnectionDialog.Show(dcd) != DialogResult.OK) return "Aborted";
+            if (DataConnectionDialog.Show(dialog) != DialogResult.OK) return "Aborted";
 
-            var connectionString = dcd.ConnectionString;
+            var connectionString = dialog.ConnectionString;
 
-            if (dcd.UseEncryptionCheckBox.Checked)
+            if (dialog.UseEncryptionCheckBox.Checked)
             {
                 connectionString += ";Encrypt=True";
             }

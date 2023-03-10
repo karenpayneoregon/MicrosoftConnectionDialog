@@ -32,6 +32,7 @@
             this.CreateButton = new System.Windows.Forms.Button();
             this.ResultTextBox = new System.Windows.Forms.TextBox();
             this.ConnectionStringTextBox = new System.Windows.Forms.TextBox();
+            this.OpenFolderButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CreateButton
@@ -61,11 +62,24 @@
             this.ConnectionStringTextBox.Size = new System.Drawing.Size(1042, 22);
             this.ConnectionStringTextBox.TabIndex = 2;
             // 
+            // OpenFolderButton
+            // 
+            this.OpenFolderButton.Image = global::DatabaseConnector.Properties.Resources.Folder_16x;
+            this.OpenFolderButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.OpenFolderButton.Location = new System.Drawing.Point(914, 12);
+            this.OpenFolderButton.Name = "OpenFolderButton";
+            this.OpenFolderButton.Size = new System.Drawing.Size(140, 27);
+            this.OpenFolderButton.TabIndex = 3;
+            this.OpenFolderButton.Text = "Open";
+            this.OpenFolderButton.UseVisualStyleBackColor = true;
+            this.OpenFolderButton.Click += new System.EventHandler(this.OpenFolderButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1066, 390);
+            this.Controls.Add(this.OpenFolderButton);
             this.Controls.Add(this.ConnectionStringTextBox);
             this.Controls.Add(this.ResultTextBox);
             this.Controls.Add(this.CreateButton);
@@ -85,6 +99,7 @@
         private System.Windows.Forms.Button CreateButton;
         private System.Windows.Forms.TextBox ResultTextBox;
         private System.Windows.Forms.TextBox ConnectionStringTextBox;
+        private System.Windows.Forms.Button OpenFolderButton;
     }
 }
 

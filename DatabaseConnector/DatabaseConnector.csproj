@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Create_16x.png" />
+    <None Include="Resources\Folder_16x.bmp" />
     <Content Include="sql_server.ico" />
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,8 @@
 ﻿using Microsoft.Data.ConnectionUI;
 using System;
+using System.Diagnostics;
 using System.IO;
+using System.Net;
 using System.Windows.Forms;
 
 namespace DatabaseConnector
@@ -69,6 +71,30 @@ namespace DatabaseConnector
                 .Replace("\\", "\\\\");
             
             ResultTextBox.Text = connectionString;
+
+            File.WriteAllText("appsettings.json", ResultTextBox.Text);
+        }
+
+        private void OpenFolderButton_Click(object sender, EventArgs e)
+        {
+
+            var fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "appsettings.json");
+            if (File.Exists(fileName))
+            {
+                var startInfo = new ProcessStartInfo
+                {
+                    FileName = "explorer.exe",
+                    UseShellExecute = true,
+                    Arguments = $"/select, {Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "appsettings.json")}"
+                };
+
+                Process.Start(startInfo);
+            }
+            else
+            {
+                MessageBox.Show("appsettings.json not found");
+            }
+
         }
     }
 
